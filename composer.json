@@ -1,0 +1,12 @@
+{
+    "name": "php/algorithms",
+    "require": {
+        "phpunit/phpunit": "^5.1"
+    },
+    "authors": [
+        {
+            "name": "Jack Zuban",
+            "email": "jack.zuban@gmail.com"
+        }
+    ]
+}
