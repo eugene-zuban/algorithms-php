@@ -15,10 +15,18 @@ class InsertionSortTest extends \PHPUnit_Framework_TestCase
         $expectedDirect = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         $expectedReverse = [9, 8, 7, 6, 5, 4, 3, 2, 1];
 
-        $sort = new InsertionSort($unsortedArray);
+        $sort = new InsertionSort();
 
-        $this->assertEquals($expectedDirect, $sort->directSort(), 'Incorrect Direct Insertion Sort result.');
+        $this->assertEquals(
+            $expectedDirect,
+            $sort->ascSort($unsortedArray),
+            'Incorrect Direct Insertion Sort result.'
+        );
 
-        $this->assertEquals($expectedReverse, $sort->reverseSort(), 'Incorrect Reverse Insertion Sort result.');
+        $this->assertEquals(
+            $expectedReverse,
+            $sort->descSort($unsortedArray),
+            'Incorrect Reverse Insertion Sort result.'
+        );
     }
 }
