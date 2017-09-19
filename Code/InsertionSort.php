@@ -15,7 +15,6 @@ class InsertionSort
     public function ascSort($array = [])
     {
         $arraySize = count($array);
-
         for ($i = 0; $i < $arraySize - 1; $i++) {
             for ($j = $i + 1; $j < $arraySize; $j++) {
                 if ($array[$i] > $array[$j]) {
@@ -36,7 +35,6 @@ class InsertionSort
     public function descSort($array = [])
     {
         $arraySize = count($array);
-
         for ($i = 0; $i < $arraySize - 1; $i++) {
             for ($j = $i + 1; $j < $arraySize; $j++) {
                 if ($array[$i] < $array[$j]) {
