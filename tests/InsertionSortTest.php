@@ -3,11 +3,12 @@
 namespace tests;
 
 use Code\InsertionSort;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class InsertionSortTest
  */
-class InsertionSortTest extends \PHPUnit_Framework_TestCase
+class InsertionSortTest extends TestCase
 {
     public function testSort()
     {
